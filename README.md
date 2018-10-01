@@ -31,8 +31,8 @@ The steps to install and execute the project are:
 2. Execute the command  ```composer install```
 3. Create the App on Spotify
 4. Create the variables in the .env 
-
+```
     SPOTIFY_KEY=
     SPOTIFY_SECRET=
     SPOTIFY_REDIRECT_URI=
-
+```
