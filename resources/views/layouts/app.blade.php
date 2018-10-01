@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+   <!--  <script src="{{ asset('js/app.js') }}" defer></script> -->
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -18,6 +18,17 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
+<script src="http://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+<script  src="http://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+
+    <style>
+   
+    .card-body{
+        padding: 5px;
+    }
+</style>
 </head>
 <body>
     <div id="app">
@@ -76,5 +87,10 @@
             @yield('content')
         </main>
     </div>
+    <script>
+      $(document).ready(function() {
+        $('#albums').DataTable();
+    } );
+    </script>
 </body>
 </html>

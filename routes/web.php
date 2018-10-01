@@ -17,10 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('login/github', 'Auth\LoginController@redirectToProvider');
-Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback');
+Route::get('/home', 'WelcomeController@Lanzamientos')->name('home');
 
 Route::get('login/spotify', 'Auth\LoginController@redirectToProviderSpotify');
 Route::get('login/spotify/callback', 'Auth\LoginController@handleProviderCallbackSpotify');
+Route::get('/Lanzamientos', 'WelcomeController@Lanzamientos');
+Route::get('/artista/{id}', 'WelcomeController@Artista');
