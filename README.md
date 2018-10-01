@@ -14,3 +14,19 @@ The elements used in this project were:
  - Spotify api [Api Docs](https://developer.spotify.com/documentation/web-api/)
  - Integration of api in laravel [Jwilsson/Spotify-web-api-php](https://github.com/jwilsson/spotify-web-api-php)
   
+  
+
+------------
+
+The steps to install and execute the project are:
+
+1. Download or clone the project.
+2. Execute the command  ```composer install```
+3. Create the App on Spotify
+4. Create the variables in the .env 
+```
+    SPOTIFY_KEY=
+    SPOTIFY_SECRET=
+    SPOTIFY_REDIRECT_URI=
+ ```
+
